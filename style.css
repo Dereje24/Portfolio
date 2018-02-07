@@ -1,3 +1,63 @@
 *{
 	box-sizing: border-box;
 }
+body{
+	background-color: #e6e6e6;
+}
+main{
+	box-sizing: border-box;
+	margin: 0 100px;
+
+}
+header{
+	height: 600px;
+	background-image: url("https://a56.asmdc.org/sites/a56.asmdc.org/files/press_release/Soccer-Ball-and-Field.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+	margin: 0 auto;
+}
+nav {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+	padding: 15px 0;
+	top: 0;
+	word-spacing: 100px;
+	overflow: hidden;
+	position: fixed;
+	background-color: #00004d;
+}
+
+nav a{
+	border-spacing: 50px;
+}
+a{
+	text-align:center;
+	text-decoration: none;
+	color: #7575a3;
+	font-size: 25px;
+	color: white;
+}
+nav a:hover{
+	background-color: #d9d9d9; 
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 500;
+	font-size: 40px;
+	letter-spacing: 4px;
+	text-decoration: underline;
+	/*padding: 5px;*/
+}
+.about{
+	background-color: #33ffbb;
+	display: flex;
+	flex-direction: row;
+}
+.about p{
+	text-align: left;
+	padding: 5px 20px;
+	font-size: 20px;
+}
