@@ -13,19 +13,32 @@ header{
 	height: 400px;
 	background-repeat: no-repeat;
 	background-size: auto;
-	margin: 0 auto;
+	margin: 10 auto;
+	padding-bottom: 10px;
 }
 header img{
 	height: 500px;
 	width: 500px;
 	border-radius: 30%;
 }
+.mobile-nav{
+	display: none;
+}
+.nav-container{
+	float: inherit;
+}
+.nav-left{
+	margin: 6.95%;
+}
+.nav-right{
+	margin: 6.95%;
+}
 nav {
-	margin: 0 auto;
-	width: 85%;
+	margin: 0;
+	width: 100%;
 	text-align: center;
 	letter-spacing: 2px;
-	padding: 15px 0;
+	padding: 20px 0;
 	top: 0;
 	word-spacing: 100px;
 	overflow: hidden;
@@ -53,7 +66,8 @@ h1{
 	font-size: 40px;
 	letter-spacing: 4px;
 	text-decoration: underline;
-	/*padding: 5px;*/
+	padding: 60px 0px 20px 0px;
+
 }
 .header-image{
 	background-color: #404040;
@@ -76,15 +90,17 @@ h1{
 .aboutContainer{
 	padding-top: 65px; 
 }
-.gallery img{
-	height: 50%;
-	width: 50%;	
+.gallery img{	
+	height: 550px;
+	width: 100%;	
 }
 .gallery{
-	display: flex;
-	flex-direction: column;
+	/*position: relative;*/
+	margin: auto;
 }
-
+.caption{
+	text-align: center;
+}
 .testimonial{
 	background-color: #33ffbb;
 	font-size: 20px;
@@ -133,4 +149,40 @@ form button{
 	width: 100%;
 	font-size: 25px;
 	letter-spacing: 4px;
+}
+form button:hover{
+	background-color: #8c8c8c;
+	color: white;
+}
+footer{
+	width: 86.1%;
+	margin: 0 auto;
+}
+.icons{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+	background-color: #00004d;
+}
+#copyRight{
+	border-top: 2px solid white;
+	width: 100%;
+	padding-top:10px; 
+	text-align: center;
+}
+
+@media (max-width: 800px){
+
+	main{
+		margin: 0 auto;
+	}
+	.main-nav{
+		display: none;
+	}
+	.mobile-nav{
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+	
 }
