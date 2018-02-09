@@ -19,8 +19,10 @@ function slideShow() {
 
 };
 
-$( '.menu-btn').on('click' function()){
-   	$('.responsive-menu').addClass('expand')
-   	}
+$('.menu-btn').on('click', function(e){
+	e.preventDefault();
+	console.log(this);
+   	$('nav').toggle('expand');
+   	})
 });
 
