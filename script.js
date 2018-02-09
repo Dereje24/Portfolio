@@ -17,6 +17,10 @@ function slideShow() {
     slide[slideIndex-1].style.display = "block"; 
     setTimeout(slideShow, 5000);
 
-}
+};
+
+$( '.menu-btn').on('click' function()){
+   	$('.responsive-menu').addClass('expand')
+   	}
 });
 

@@ -4,7 +4,7 @@
 	padding: 0;
 }
 body{
-	background-color: #C4BCB2;
+	background-color: #051E74;
 }
 main{
 	box-sizing: border-box;
@@ -23,11 +23,25 @@ header img{
 	height: 500px;
 	width: 500px;
 	border-radius: 30%;
+	padding: 7px 0 0 7px;
 }
 .mobile-nav{
 	display: none;
 }
-
+.expand {
+	display: block !important; 
+}
+.responsive-menu{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	display: none;
+}
+ul{
+	list-style: none;
+}
 nav {
 	position: fixed;
 	top: 0;
@@ -36,7 +50,7 @@ nav {
 	letter-spacing: 2px;
 	padding: 20px 0;
 	word-spacing: 100px;
-	background-color: #054358;
+	background-color: #282827;
 	z-index: 100;
 }
 
@@ -50,7 +64,7 @@ a{
 	color: #F0E1D1;
 	font-size: 25px;
 	color: white;
-	font-family: 'Berkshire Swash', cursive;
+	font-family: 'Encode Sans', sans-serif;
 }
 nav a:hover{
 	text-decoration: underline;
@@ -60,13 +74,24 @@ nav a:hover{
 h1{
 	text-transform: uppercase;
 	text-align: center;
-	font-family: 'Berkshire Swash', cursive;
+	font-family: 'Encode Sans', sans-serif;
 	font-weight: 800;
 	font-size: 40px;
 	letter-spacing: 4px;
 	text-decoration: underline;
 	padding: 30px 0px 20px 0px;
-
+}
+h2{
+	text-transform: uppercase;
+	text-align: center;
+	color: #F3F3F3;
+	letter-spacing: 5px;
+	margin: 0% 2% 2% 2%;
+}
+h4{
+	text-align: center;
+	color: #F3F3F3;
+	padding-bottom: 2%;
 }
 .header-container{
 	display: flex;
@@ -74,17 +99,18 @@ h1{
 	width: 100%;
 	height: 100%;
 	margin: 0 0 10px 0; 
-	background-color: #FFEDDF;
+	background-color: #F3F3F3;
 }
 .name{
-	color: white;
-	/*width: 100%;*/
+	color: #282827;
+	padding: 10% 0 0 15%;
 	justify-content: space-between;
+	
 }
 .about{
 	border: double;
 	padding-top: 10px;
-	background-color: #FFEDDF;
+	background-color: #F3F3F3;
 	display: flex;
 	flex-direction: row;
 }
@@ -95,7 +121,7 @@ h1{
 }
 .aboutContainer{
 	padding-top: 10px; 
-	margin: 13% 0 4% 0;
+	margin: 0% 0 4% 0;
 }
 .gallery img{	
 	height: 550px;
@@ -113,7 +139,7 @@ h1{
 }
 .testimonial{
 	border: double;
-	background-color: #F7EEF6;
+	background-color: #F3F3F3;
 	font-size: 20px;
 }
 .name-and-email{
@@ -136,8 +162,6 @@ input {
 	position: inherit;
 	float: left;
 	margin-bottom: 10px;
-	/*margin-right: 25px;
-	margin-bottom: 15px;*/
 }
 .input{
 	display: flex;
@@ -173,32 +197,74 @@ footer{
 	display: flex;
 	justify-content: space-around;
 	padding-top: 10px;
-	background-color: #647984;
+	background-color: #282827;
+	width: 100%;
 }
 .icons:hover{
 	color: white;
 }
 #copyRight{
-	border-top: 2px solid white;
 	width: 100%;
 	padding-top:10px; 
 	text-align: center;
+	color: #F3F3F3;
 }
 
-@media (max-width: 885px){
+@media (max-width: 995px){
 
 	main{
-		margin: 0 auto;
+		margin: 0%;
 	}
 	nav{
 		display: none;
+	}
+	header{
+		padding-top: 1px;
+		top: 0;
+		height: 70%;
+	}
+	.header-container{
+		width: 100%;
+	}
+	h1{
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding: 10px 0px 20px 0px;
+	}
+	.name{
+	padding: 20% 20px 5px 20px;
+	}
+	header img{
+	height: 400px;
+	width: 400px;
+	border-radius: 30%;
+	padding: 7px 0 0 7px;
 	}
 	.mobile-nav{
 		display: inline-block;
 		width: 100%;
 		margin: 0 auto;
 		padding: 0;
-		background-color: #647984;
+		background-color: #282827;
 	}
-	
+	.gallery img{	
+	height: 400px;
+	width: 100%;	
+	}
+	.input{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	}
+	input {
+	width: 100%;
+	}
+	form textarea{
+		padding: 30px;
+		margin: 0 auto;
+	}
+	.icons{
+		width: 100%;
+	}
 }
