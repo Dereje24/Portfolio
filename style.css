@@ -47,7 +47,6 @@ h1{
 h2{
 	text-transform: uppercase;
 	text-align: center;
-	color: #F3F3F3;
 	letter-spacing: 5px;
 	margin: 0% 2% 2% 2%;
 }
@@ -71,15 +70,17 @@ form button{
 	width: 100%;
 	font-size: 25px;
 	letter-spacing: 4px;
+	margin-bottom: 2%;
 }
 form button:hover{
 	background-color: #8c8c8c;
 	color: white;
+
 }
 footer{
-	width: 100%;
 	padding-top: 10px;
-	background-color: black;
+	background-color: #BFBFBF;
+	margin: 0 5%;
 }
 form{
 	flex-direction: column;
@@ -109,6 +110,14 @@ input {
 }
 #projects{
 	margin: 0 5%;
+}
+#me{
+	text-transform: uppercase;
+	text-align: center;
+}
+#skills{
+	text-transform: uppercase;
+	text-align: center;
 }
 .header-container{
 	display: flex;
@@ -145,6 +154,7 @@ input {
 }
 .menu-btn{
 	z-index: 100;
+	color: white;
 }
 .responsive-menu{
 	text-transform: uppercase;
@@ -163,15 +173,26 @@ input {
 	border: double;
 	padding-top: 10px;
 	background-color: #F3F3F3;
-	display: flex;
-	flex-direction: row;
+/*	display: flex;
+	flex-direction: row;*/
 	margin: 0 5%;
+	width: 50%;
+}
+.skills{
+	border: double;
+	padding-top: 10px;
+	background-color: #F3F3F3;
+/*	display: flex;
+	flex-direction: row;*/
+	justify-content: space-around;
+	margin: 0 5%;
+	width: 50%;
 }
 .about p{
 	text-align: left;
 	padding: 5px 20px;
 	font-size: 20px;
-	width: 50%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -179,6 +200,8 @@ input {
 .aboutContainer{
 	padding-top: 10px; 
 	margin: 0% 0 4% 0;
+	display: flex;
+	flex-direction: row;
 }
 .about img{
 	width: 100%;
@@ -194,7 +217,7 @@ input {
 	border: double;
 	background-color: #F3F3F3;
 	font-size: 20px;
-	margin:0 5%;
+	margin:2% 5%;
 }
 .contact{
 	margin: 0 5%;
@@ -213,7 +236,6 @@ input {
 	display: flex;
 	justify-content: space-around;
 	padding-top: 10px;
-	background-color: #282827;
 	width: 100%;
 }
 .icons:hover{
@@ -246,6 +268,32 @@ input {
 	}
 	.header-container{
 		width: 100%;
+	}
+	#image {
+	height: 500px;
+	width: 500px;
+	background-repeat: no-repeat;
+	}
+	.about p{
+	text-align: left;
+	padding: 5px 20px;
+	font-size: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	}
+	.about{
+		width: 100%;
+	}
+	.skills{
+		width: 100%;
+	}
+	.aboutContainer{
+	padding-top: 10px; 
+	margin: 0% 0 4% 0;
+	display: flex;
+	flex-direction: column;
 	}
 	h1{
 	font-weight: 400;
@@ -289,6 +337,6 @@ input {
 		width: 100%;
 	}
 	footer{
-		margin:0;
+		margin:0 5%;
 	}
 }
