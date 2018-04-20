@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>About Me</title>
-  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="animate.css">
@@ -14,15 +14,15 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
-<body>		
+<body>
 	<header>
 		<div class="mobile-nav">
-        	<a href="" class="hamburger"><i class="fa fa-bars fa-2x menu-btn"></i></a>
+        	<a href="" class="hamburger"><i class="fa fa-bars fa-2x" id="menu-btn"></i></a>
 		</div>
 		<nav>
 			<a href="#about">About</a>
 			<a href="#projects">Portfolio</a>
-			<a href="#testimonial">Quotes</a>
+			<!-- <a href="#testimonial">Quotes</a> -->
 			<a href="#contact">Contact</a>
 		</nav>
 
@@ -40,37 +40,54 @@
 		<div class="about" id="about">
 			<h3 class="animated fadeInUp" id="me">About Me</h3>
 				<div>
-				<p>A full-time web development student who enjoy problem-solving. Enjoy working in a team and always open to learning new things. Enjoy watching and playing sports. I've been a big soccer fan all my life. Since coming the U.S in 2009, I've also become a fan of basketball and "football". </p>
+				<p>A full-time web developer who enjoys problem-solving.
+					Enjoy working in a team and always open to learning new things.
+					Enjoy watching and playing sports. I've been a big soccer fan all my life.
+					Since coming the U.S in 2009, I've also become a fan of basketball and "football". </p>
 				</div>
+				<button type="button" name="button" id="resume">Resume</button>
+				<div class="modalContainer">
+        	<div class="modal-content">
+						<button type="submit" name="button" id="xClose">X</button>
+						<iframe src="https://drive.google.com/file/d/0B9PiCyPrf_SZcjNjZUVjOVlWTmFOay1SVDZ5RTVBRnFrdjVB/preview" width="640" height="480"></iframe>
+					</div>
+			</div>
 		</div>
 			<div class="skills">
 				<h3 class="animated fadeInUp" id="skills">Skills</h3>
-			<div>
-				<a href="#"><i class="fa fa-js fa-4x" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-html5 fa-4x" aria-hidden="true"></i></a>
-				<a href="#"><i class="fa fa-css3 fa-4x" aria-hidden="true"></i></a>
+			<div class="skills-list animated fadeInUp">
+				<i class="fab fa-js fa-4x"></i>
+				<i class="fab fa-html5 fa-4x"></i>
+				<i class="fab fa-css3 fa-4x"></i>
+				<i class="fab fa-github fa-4x"></i>
+				<i class="fa fa-code fa-4x"></i>
+				<i class="fab fa-node fa-4x"></i>
 			</div>
 	</section>
 
 	<section id="projects">
 		<h2>Projects</h2>
 			<div class="gallery">
-				<div class="slides caption"><img src="images/racer-gamepic.png"> <h4> Racer Game </h4></div>
-				<div class="slides caption"><img src="images/moument.png"> <h4> Monument Landing </h4> </div>
-				<div class="slides caption"><img src="images/super-market.png"> <h4> Super Market </h4></div>
+				<div class="slides caption"><img src="images/racer-gamepic.png"> <h4> <a href="https://github.com/Dereje24/Race-game">Racer Game <h6>(GitHub link)</h6> </a></h4></div>
+				<div class="slides caption"><img src="images/moument.png"> <h4> <a href="https://github.com/Dereje24/Monument-landing">Monument Landing <h6>(GitHub link)</h6> </a></h4> </div>
+				<div class="slides caption"><img src="images/super-market.png"> <h4> <a href="https://github.com/Dereje24/Super-Market"> Super Market <h6>(GitHub link)</h6> </a></h4></div>
+				<div class="slides caption"><img src="images/scootWee.png"> <h4> <a href="https://dry-atoll-70746.herokuapp.com/"> ScootWee <h6>(Link to site)</h6> </a></h4></div>
+				<div class="slides caption"><img src="images/get-out.png"> <h4> <a href="https://can-you-get-out.herokuapp.com/landing"> Can You Get Out? <h6>(Link to site)</h6> </a></h4></div>
+				<div class="slides caption"><img src="images/codex.png"> <h4> <a href="https://buy-it-here.herokuapp.com/"> Codex <h6>(Link to site)</h6> </a></h4></div>
+				<div class="slides caption"><img src="images/geoquakes.png"> <h4> <a href="https://github.com/Dereje24/geoquakes"> Geoquakes <h6>(Github link)</h6> </a></h4></div>
 			</div>
 	</section>
 
-	<section class="testimonialContainer">
+	<!-- <section class="testimonialContainer">
 		<h2 class="animated swing">Testimonials</h2>
 		<div class="testimonial" id="testimonial">
 		<p>The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. Celebrate success right, the only way, apple. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed.</p>
-		<p>The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. They don’t want us to eat. In life there will be road blocks but we will over come it.</p>		
+		<p>The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don’t want you to eat. They don’t want us to eat. In life there will be road blocks but we will over come it.</p>
 		</div>
-	</section>
+	</section> -->
 	<section class="contact">
 		<h2 id="contact">Contact Me</h2>
-		<form>
+		<form method="POST" action="MAILTO: ddilnesaw@yahoo.com" enctype="text/plain">
 			<div class="input">
 			<input type="text" name="name" placeholder="Full Name">
 			<input type="email" name="email" placeholder="E-mail">
@@ -83,11 +100,9 @@
 	<footer>
 		<!-- Font awsome icons to connect to social media -->
 		<div class="icons">
-			<a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+			<a href="#contact"><i class="fab fa-instagram fa-2x"></i></a>
+			<a href="https://github.com/Dereje24"><i class="fab fa-github fa-2x"></i></a>
+			<a href="https://www.linkedin.com/in/dereje-dilnesaw"><i class="fab fa-linkedin fa-2x"></i></a>
 		</div>
 		<p id="copyRight"> &copy 2018 Dereje Dilnesaw</p>
 	</footer>

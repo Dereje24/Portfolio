@@ -7,7 +7,7 @@ nav {
 	width: 100%;
 	text-align: right;
 	letter-spacing: 2px;
-	padding: 0px 40px 10px 10px;
+	padding: 5px 40px 10px 10px;
 	word-spacing: 100px;
 	background-color: #BFBFBF;
 	z-index: 100;
@@ -26,7 +26,7 @@ a{
 }
 nav a:hover{
 	text-decoration: underline;
-	color: white; 
+	color: white;
 }
 header{
 	height: 800px;
@@ -105,7 +105,7 @@ input {
 #image {
 	background-image: url('images/profilepic.jpg');
 	height: auto;
-	width: 100%;
+	width: 50%;
 	background-repeat: no-repeat;
 }
 #projects{
@@ -119,12 +119,19 @@ input {
 	text-transform: uppercase;
 	text-align: center;
 }
+#resume{
+	width: 100%;
+	justify-content: center;
+}
+#xClose{
+	width: 5%;
+}
 .header-container{
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	height: 100%;
-	margin: 0 0 10px 0; 
+	margin: 0 0 10px 0;
 	background-color: #F3F3F3;
 }
 .top-img-container{
@@ -132,10 +139,10 @@ input {
 	height: 400px;
 	margin: 5%;
 }
-.gallery img{	
+.gallery img{
 	border: groove;
 	height: 550px;
-	width: 100%;	
+	width: 100%;
 }
 .gallery{
 	margin: 0 auto;
@@ -144,7 +151,8 @@ input {
 	display: none;
 }
 .expand {
-	display: inline-block; 
+	display: flex;
+	flex-direction: column;
 	color: red;
 	font-size: 50px;
 	width: 100%;
@@ -152,7 +160,7 @@ input {
 	display: flex;
 	flex-direction: column;
 }
-.menu-btn{
+.hamburger{
 	z-index: 100;
 	color: white;
 }
@@ -166,8 +174,8 @@ input {
 }
 .name{
 	color: #282827;
-	padding: 10% 10% 0 0;
-	/*justify-content: space-between;*/	
+	margin: 20% auto;
+	/*justify-content: space-between;*/
 }
 .about{
 	border: double;
@@ -198,8 +206,8 @@ input {
 	justify-content: space-around;
 }
 .aboutContainer{
-	padding-top: 10px; 
-	margin: 0% 0 4% 0;
+	padding-top: 10px;
+	margin: 5% auto;
 	display: flex;
 	flex-direction: row;
 }
@@ -207,9 +215,31 @@ input {
 	width: 100%;
 	height: 300px;
 }
+.modalContainer{
+  padding: 100px;
+  background-color: rgba(211, 211, 211, .3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-content{
+  padding: 40px 20px;
+  color: #444;
+  width: 60%;
+  background-color: white;
+}
+.modalopen{
+  display: flex;
+	z-index: 1;
+}
 .caption{
 	text-align: center;
-	font-family: 'Berkshire Swash', cursive;
+	font-family: 'Berkshire Swash', 'cursive';
 	font-size: 25px;
 
 }
@@ -241,9 +271,17 @@ input {
 .icons:hover{
 	color: white;
 }
+.skills-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.error{
+	border: 2px solid red;
+}
 #copyRight{
 	width: 100%;
-	padding-top:10px; 
+	padding-top:10px;
 	text-align: center;
 	color: #F3F3F3;
 }
@@ -268,10 +306,12 @@ input {
 	}
 	.header-container{
 		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
 	#image {
 	height: 500px;
-	width: 500px;
+	width: 100%;
 	background-repeat: no-repeat;
 	}
 	.about p{
@@ -290,10 +330,11 @@ input {
 		width: 100%;
 	}
 	.aboutContainer{
-	padding-top: 10px; 
-	margin: 0% 0 4% 0;
+	padding-top: 10px;
+	margin: 5% auto;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	}
 	h1{
 	font-weight: 400;
@@ -303,6 +344,9 @@ input {
 	}
 	.name{
 	padding: 20% 20px 5px 20px;
+	}
+	.skills{
+		padding: 2% 0;
 	}
 	header img{
 	height: 400px;
@@ -317,9 +361,9 @@ input {
 		padding: 10px 0;
 		background-color: #282827;
 	}
-	.gallery img{	
+	.gallery img{
 	height: 400px;
-	width: 100%;	
+	width: 100%;
 	}
 	.input{
 	display: flex;
